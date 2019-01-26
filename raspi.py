@@ -5,7 +5,7 @@ import RPi.GPIO as GPIO
 # インターバル
 INTERVAL = 3
 # スリープタイム
-SLEEPTIME = 20
+SLEEPTIME = 3
 # 使用するGPIO
 GPIO_PIN = 18
 
@@ -24,7 +24,8 @@ if __name__ == '__main__':
                 cnt = cnt + 1
                 time.sleep(SLEEPTIME)
             else:
-                print(GPIO.input(GPIO_PIN))
+                # print(GPIO.input(GPIO_PIN))
+                print('感知なし・・・')
                 time.sleep(INTERVAL)
     except KeyboardInterrupt:
         print("終了処理中...")
