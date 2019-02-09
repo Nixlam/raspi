@@ -3,11 +3,11 @@
 echo "Start setting....."
 
 # pigpioのインストール
-# sudo apt update
-# sudo apt upgrade
-# sudo apt install pigpio python3-pigpio
-# sudo systemctl enable pigpiod.service
-# sudo systemctl start pigpiod
+sudo apt update
+sudo apt upgrade
+sudo apt install pigpio python3-pigpio
+sudo systemctl enable pigpiod.service
+sudo systemctl start pigpiod
 
 # cronへの追加処理
 add_command_to_cron () {
