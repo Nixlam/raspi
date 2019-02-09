@@ -5,7 +5,9 @@
 ## インストール
 ```
 git clone https://github.com/Nixlam/raspi.git
-sudo apt-get install python3-rpi.gpio
+cd raspi/
+chmod 755 setting.sh
+./setting.sh
 ```
 
 ## 実行方法
