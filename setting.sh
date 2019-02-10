@@ -9,6 +9,12 @@ sudo apt install pigpio python3-pigpio
 sudo systemctl enable pigpiod.service
 sudo systemctl start pigpiod
 
+# GPIOの設定
+echo 'm 17 w   w 17 0   m 18 r   pud 18 u' > /dev/pigpio
+
+# IR Record and Playbackをダウンロード
+curl http://abyz.me.uk/rpi/pigpio/code/irrp_py.zip | zcat > irrp.py
+
 # cronへの追加処理
 add_command_to_cron () {
 	crontab -l > tmpcron
