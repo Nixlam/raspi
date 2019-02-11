@@ -1,6 +1,10 @@
+import os
 from datetime import datetime
 import time
 import RPi.GPIO as GPIO
+import settings.py
+
+print(os.environ.get("MOTION_SENSOR_GPIO_PIN"))
 
 # インターバル
 INTERVAL = 3
